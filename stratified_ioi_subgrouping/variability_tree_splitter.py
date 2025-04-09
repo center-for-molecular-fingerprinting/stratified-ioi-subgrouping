@@ -37,7 +37,9 @@ def calculate_between_person_variability(
     return group.groupby("visit_number", observed=False)[features].std().mean()
 
 
-def compute_ioi(group: pd.DataFrame, features: List[Union[str, float]]) -> pd.DataFrame:
+def calculate_ioi(
+    group: pd.DataFrame, features: List[Union[str, float]]
+) -> pd.DataFrame:
     """
     Computes the Index of Individuality (IOI) for a given group by taking the ratio
     of within-person variability to between-person variability for each feature.
