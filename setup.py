@@ -13,6 +13,7 @@ setup(
     url="https://github.com/center-for-molecular-fingerprinting/stratified-ioi-subgrouping",
     classifiers=[
         "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
 )
